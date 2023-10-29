@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./img/logo_windows.svg" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Academlo Ecommerce</title>
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+  <!--! Inicio Animation -->
+  <div class="animation">
+    <div class="animation__div">
+      <img class="animation__logo" src="./img/logo.svg" alt="Logo de Academlo">
+    </div>
+  </div>
+  <!--! Final Animation -->
+
+  <div class="container">
+
+    <!--! Inicio Header -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li"><a class="header__a" href="#section_1">Home</a></li>
+          <li class="header__li"><a class="header__a" href="#section_2">Products</a></li>
+        </ul>
+      </nav>
+      <img class="header__logo" src="./img/logo_mini.svg" alt="Logo de Academlo">
+      <div class="header__buttons">
+        <button class="header__button_cart">
+          <img class="header__button_cart_img" src="./img/icon_cart.svg" alt="Icono de carrito de compras">
+          <p class="header__button_cart_number"><span class="number"></span></p>
+        </button>
+      </div>
+    </header>
+    <!--! Final Header -->
+
+    <!--! Inicio Cart -->
+    <div class="cart__modal">
+      <section class="cart">
+        <header class="cart__header">
+          <img class="cart_header_close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAACNElEQVRYR+2Wu04DMRBFvYSGKAVFkCgpKCiBAmjpkoJHy9cQ/oRHAQUFf5CGjwCEIAVFJOhIaGAz3Nn1brxko4ztBKWwJSuP9djHd+auHak5b9Gc86kA6JuhoGBQ0FcB3/hQg/+uIBGtYdG3KIp+bBZH3CqPR1zXJs4qxVhkA5O30e/RT6SQGo7juO3bQIoBa4D7TOESJdBuJZBEVYzvcxxvjtuDDaQYECrsYeJT9AZxqtLFztHPoEhHL174QMymjjk2HtzoGAad2MSAPFMOOVANtZDPXQqZwhE2FDnD8QpWgAVIKGlsvwBJtAi4b1bbC84JUENyHZp1xX8nNYleH3kWw1QV1UQp9Cbm9M8AawWzeMOZWfHzozt0/m3+x453gnNW0IDMjTNGGStDlM3hrOAoJKEmIzXAA+0fbzhvBXU97uKzhW6ahh8xYAt192hbd+Z4LwXpi3bUUgLXHANxrSGfXCGdAYnqcPJ7Gy/tDWMSNgS7uGiSFZjkw97BzinOHTwAyPCFnbgVvYauX0F5RTo72VpBwG2rGGmtqAMjbQVDmMeiMeZKp/vFJt1WgFh4SxviEMcYvibhpW4th6xcKhWzcV6lkGJAffCzIY6Gk8eAW8ZloVd68Bch8w1daCU7EkgbwOwumF23RHVVcuLM5rrFuzUurM9sCOnZSlXcpvswTuqZ2VxYs3QAch3fu1I4I272V35JzUx7jLgGp72wdL4AKFVq3LigYFDQVwHf+FCDvgr+ApjJzynLMgWXAAAAAElFTkSuQmCC"/>
+          <h1 class="cart__header_h1">Cart</h1>
+        </header>
+        <main class="cart__main">
+          <!-- Aquí se insertan los productos desde el JavaScript -->
+        </main>
+        <footer class="cart__footer">
+          <div class="cart__footer_info">
+            <p class="cart__footer_info_amount"></p>
+            <p class="cart__footer_info_total"></p>
+          </div>
+          <div class="cart__footer_buttons">
+            <button class="cart__footer_button_delete">Empty cart</button>
+            <button class="cart__footer_button_buy">Purchase</button>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <!--! Inicio Cart -->
+
+    <!--! Inicio Section 1 -->
+    <div id="section_1" class="section_1">
+      <div class="section_1__image_container">
+        <div class="section_1__image_modal"></div>
+        <img class="section_1__image" src="https://i.pinimg.com/originals/fe/cb/51/fecb512545859ef687ceff786f828dff.jpg" alt="">
+        <div class="section_1__text_container">
+          <p class="section_1__text_1">We want you to wear your best smile</p>
+          <p class="section_1__text_2">that's why we offer you the best items</p>
+        </div>
+      </div>
+      <ul class="section_1__ul">
+        <li class="section_1__li">High quality items</li>
+        <li class="section_1__li">Environmentally friendly</li>
+        <li class="section_1__li">We have the best prices</li>
+      </ul>
+    </div>
+    <!--! Final Section 1 -->
+
+    <!--! Inicio Section 2-->
+    <main id="section_2" class="section_2">
+      <h1 class="section_2__h1">Our products</h1>
+      <select name="select_menu" id="select_menu" class="select_menu">
+        <option class="select_menu__option category" value="option_1">All products</option>
+        <option class="select_menu__option category" value="option_2">Shirts</option>
+        <option class="select_menu__option category" value="option_3">Hoddies</option>
+        <option class="select_menu__option category" value="option_4">Sweaders</option>
+      </select>
+      <ul class="section_2__ul">
+        <li class="section_2__li category">All products</li>
+        <li class="section_2__li category">Shirts</li>
+        <li class="section_2__li category">Hoddies</li>
+        <li class="section_2__li category">Sweaders</li>
+      </ul>
+      <div class="section_2__products_container">
+        <!-- Aquí se insertan los productos desde la API -->
+      </div>
+    </main>
+    <!--! Final Section 2-->
+
+    <!--! Inicio Footer -->
+    <footer class="footer">
+      <div class="footer__group_1">
+        <p class="group_1__text_1">Developed by</p>
+        <p class="group_1__text_2"><a href="" target="_blank">Samuel Bornacelly</a></p>
+      </div>
+      <div class="footer__group_2">
+        <p class="group_2__text_1">Social networks</p>
+        <div class="group_2__icons">
+          <a href="https://www.linkedin.com/in/samuel-bornacelly/" target="_blank"><img class="group_2__icon" src="./img/icon_linkedin.svg" alt="Social icon"></a>
+          <a href="https://github.com/SamuelBornacelly" target="_blank"><img class="group_2__icon" src="./img/icon_github.svg" alt="Social icon"></a>
+          <a href="" target="_blank"><img class="group_2__icon" src="./img/icon_portfolio.svg" alt="Social icon"></a>
+        </div>
+      </div>
+    </footer>
+    <!--! Inicio Footer -->
+
+    <!--! Inicio Modal -->
+    <section class="modal">
+      <article class="modal__product">
+        <!-- Aquí se inserta desde con JavaScript la información detallada del producto seleccionado -->
+      </article>
+    </section>
+    <!--! Inicio Modal -->
+
+  </div>
+
+</body>
+</html>
